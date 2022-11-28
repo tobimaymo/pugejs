@@ -1,0 +1,11 @@
+<h1>Product List</h1>
+<ul>
+    <% albums.forEach(element => { %>
+        <li><%=element.title%>, <%=element.autor%> - $<%=element.price%>
+         %>
+        </li>
+    <% }) %>
+</ul>
+<form action="/home" method="post">
+    <button>Añadir</button>
+</form>
